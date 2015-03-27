@@ -11,7 +11,7 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     0px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -50,3 +50,121 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+.post-list {
+   
+  .each-post{
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+    width: 15%;
+    background: grey;
+  }
+}
+
+
+.side-list {
+  width:100%; 
+  .each-post{
+    margin: 5px;
+    padding: 5px;
+    font-size: 10px;
+    width: 75%;
+    background: grey;
+  }
+}
+
+
+
+.site-nav{
+  li {
+    display:inline-block;
+  }
+}
+.post-cat {
+  margin:0px auto 10px;
+  padding-top:5px;
+  padding-bottom:5px;
+
+  ul {
+
+    margin:0px auto;
+
+  li {
+    margin:10px;
+    padding: 3px;
+    display: inline-block;
+  }
+
+}
+}
+
+
+.banner {
+  height:300px;
+    position:relative;
+        width:100%;
+          margin:0 auto;
+          overflow-y: hidden;
+
+
+          img {
+            width: 100%;
+          }
+}
+
+.banner img {
+  position:absolute;
+  left:0;
+
+}
+
+@keyframes bannerFadeInOut {
+  0% {
+        opacity:1;
+          
+  }
+  17% {
+        opacity:1;
+          
+  }
+  25% {
+        opacity:0;
+          
+  }
+  92% {
+        opacity:0;
+          
+  }
+  100% {
+        opacity:1;
+          
+  }
+
+}
+
+
+.banner img {
+  -webkit-animation-name: bannerFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+}
+
+.banner img:nth-of-type(1) {
+    -webkit-animation-delay: 6s;
+
+}
+.banner img:nth-of-type(2) {
+    -webkit-animation-delay: 4s;
+
+}
+.banner img:nth-of-type(3) {
+    -webkit-animation-delay: 2s;
+
+}
+.banner img:nth-of-type(4) {
+    -webkit-animation-delay: 0;
+
+}
