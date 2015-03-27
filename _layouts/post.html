@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div class="post-wrapper">
 <div class="post">
 
   <header class="post-header">
@@ -12,4 +13,29 @@ layout: default
     {{ content }}
   </article>
 
+</div>
+
+<div class="side-bar">
+  <h3> Similar posts </h3>
+  <ul class="side-post-list">
+    {% for post in site.posts %}
+    {% assign toshow = 0 %}
+    {% for cat in post.categories %}
+      {% if page.categories contains cat %}
+        {% assign toshow = 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if toshow == 1 %}
+    <li class="each-post{% for cat in post.categories %} {{cat}}{% endfor %}">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y"   }}</span>
+
+      <h3>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl   }}">{{ post.title   }}</a>
+        <p class="post-exceprt">{{post.excerpt | strip_html |truncatewords:30 }}
+      </h3>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
 </div>
