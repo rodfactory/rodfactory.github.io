@@ -30,7 +30,7 @@ layout: default
 
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <img src="{{post.image}}">
+          <img src="{{ post.image | prepend: site.baseurl }}">
         </h3>
       </li>
     {% endfor %}
