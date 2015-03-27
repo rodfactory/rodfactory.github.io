@@ -4,20 +4,37 @@ layout: default
 
 <div class="home">
 
+
+  <div class="banner">
+    <img src="/images/download1.jpg">
+    <img src="/images/download2.jpg">
+    <img src="/images/download3.jpg">
+    <img src="/images/download4.jpg">
+  </div>
+
+  <div class="post-cat">
+    <ul class="post-cat-list">
+      {% for cat in site.categories %}
+      <li class="category" data-cat="{{ cat[0] }}">{{ cat[0] | capitalize }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+    
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
+    <li class="each-post{% for cat in post.categories %} {{cat}}{% endfor %}">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+          <img src="{{post.image}}">
+        </h3>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
