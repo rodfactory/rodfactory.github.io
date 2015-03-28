@@ -3,6 +3,7 @@ layout: post
 title:  "Test Post!"
 date:   2015-03-27 19:43:38
 categories: jekyll 
+image: /images/post5.jpg
 ---
 hasdkjfhkasdhf kadsh hdsfjk hjadskh fkasl
 asddjkfhjk ashdkj
