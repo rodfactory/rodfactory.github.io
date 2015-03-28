@@ -26,13 +26,8 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
     <li class="each-post{% for cat in post.categories %} {{cat}}{% endfor %}">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <img src="{{ post.image | prepend: site.baseurl }}">
-        </h3>
-      </li>
+      {% include post_snippet.html %}
+    </li>
     {% endfor %}
   </ul>
 
