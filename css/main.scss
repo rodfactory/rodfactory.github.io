@@ -30,6 +30,8 @@ $max_width_percent: 95%;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$post_image_height: 150px;
+$post_image_width: 150px;
 
 
 // Using media queries with like this:
@@ -184,11 +186,15 @@ body {
 .post-list {
 
   .each-post{
+    
+    img {
+      height:$post_image_height;
+      width: $post_image_width;
+    }
     margin: 10px;
     padding: 5px;
     font-size: 12px;
     width: 15%;
-    background: grey;
   }
 
 }
@@ -202,7 +208,6 @@ body {
       margin: 5px;
       padding: 5px;
       font-size: 10px;
-      background: grey;
     }
 
   }

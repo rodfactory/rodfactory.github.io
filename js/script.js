@@ -3,7 +3,8 @@ $(document).ready( function() {
 
 $container = $('.post-list');
 $container.isotope({
-  itemSelector: '.each-post'
+  itemSelector: '.each-post',
+  layout: 'fitRows' 
 });
 
 
