@@ -22,8 +22,10 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$banner_height:    400px;
 // Width of the content area
 $content-width:    800px;
+$max_width_percent: 95%;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -110,7 +112,7 @@ body {
 
 .banner {
 
-  height:300px;
+  height:$banner_height;
   position:relative;
   width:100%;
   margin:0 auto;
