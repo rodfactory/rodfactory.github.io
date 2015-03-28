@@ -11,7 +11,10 @@ $container.isotope({
 $('.category').click(function(event){
   var element = $(this);
   var cat = element.data('cat');
-  $container.isotope({ filter:'.' + cat});
+  if(cat != 'all')
+    $container.isotope({ filter:'.' + cat});
+  else
+    $container.isotope({ filter:'' });
   element.addClass("active");
   document.activecat.removeClass('active');
   document.activecat = element;
@@ -25,9 +28,5 @@ $container.imagesLoaded( function() {
 
 document.activecat = $('.category').first();
 document.activecat.addClass('active');
-var cat = document.activecat.data('cat');
-$container.isotope({ filter:'.' + cat});
-
-
 
 });
