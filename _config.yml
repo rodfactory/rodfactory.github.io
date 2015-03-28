@@ -2,7 +2,8 @@
 title: RODFactory
 email: rodfactory@gmail.com
 description: One stop for all the fun!
-url: "http://rodfactory.in" # the base hostname & protocol for your site
+baseurl: "/rodfactory"
+url: "http://chettyarun.github.io/rodfactory" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
