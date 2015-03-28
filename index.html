@@ -14,6 +14,7 @@ layout: default
 
   <div class="post-cat">
     <ul class="post-cat-list">
+      <li class="category" data-cat="all">{{ "All" | capitalize }}</li>
       {% for cat in site.categories %}
       <li class="category" data-cat="{{ cat[0] }}">{{ cat[0] | capitalize }}</li>
       {% endfor %}
