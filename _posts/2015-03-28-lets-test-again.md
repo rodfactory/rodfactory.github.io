@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Yo! My first Jekyll"
+title:  "Prudhvi Chandra"
 date:   2015-03-28 17:00:38
 categories: news
 image: /images/post4.jpg
 ---
-##The castle
+##First Post
 
 ![Yverdon-les-Bains Castle](/images/Picswiss_VD-47-01.jpg)
 
