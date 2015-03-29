@@ -7,7 +7,7 @@ image: /images/post4.jpg
 ---
 ##First Post
 
-![Yverdon-les-Bains Castle](/images/bram 1.jpg)
+![Yverdon-les-Bains Castle](/images/download1.jpg)
 
 The imposing main walls and their four towers were erected within a few years. The design of the castle followed the geometric characteristics used for castles set in plains, and had been planned by the young mason and architect Jacques de Saint-Georges. Jacques also planned Caernarvon Castle and built the castle Saint-Georges d'Espéranches, near Lyon.
 
